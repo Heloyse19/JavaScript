@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <div class="row1">
+        <button id="bt1">1</button>
+        <button id="bt2">2</button>
+        <button id="bt3">3</button>
+        <button id="btplus">+</button>
+    </div>
+    <div class="row2">
+        <button id="bt4">4</button>
+        <button id="bt5">5</button>
+        <button id="bt6">6</button>
+        <button id="btmult">*</button>
+    </div>
+    <div class="row3">
+        <button id="bt7">7</button>
+        <button id="bt8">8</button>
+        <button id="bt9">9</button>
+        <button id="btdiv">/</button>
+    </div>
+    <div class="row">
+        <button id="btigual">=</button>
+        <button id="btzero">0</button>
+        <button id="ponto">.</button>
+        <button id="menos">-</button>
+    </div>
+    <button id="limpar">limpar</button>
+    <script>
+        const bt2= document.getElementById('bt2')
+        const btigual= document.getElementById('btigual')
+        const btmais= document.getElementById('btmais')
+        const input= document.getElementById('input')
+        const limpar= document.getElementById('limpar')
+        let display= ''
+        bt2.addEventListener('click', ()=>{
+            display +='2'
+            input.value= display
+        }) //()=>{} = função
+        limpar.addEventListener('click', ()=>{
+            display =''
+            input.value= display
+        })
+        btplus.addEventListener('click', ()=>{
+            display +=' + '
+            input.value= display
+        })
+        btigual.addEventListener('click', ()=>{
+            if(!display){ // ! significa esta vazio 
+                return
+            }
+            const soma= eval(display)
+            input.value= soma
+        })
+        bt1.addEventListener('click', ()=>{
+            display +='1'
+            input.value= display
+        })
+
+        bt3.addEventListener('click', ()=>{
+            display +='3'
+            input.value= display
+        })
+
+        bt4.addEventListener('click', ()=>{
+            display +='4'
+            input.value= display
+        })
+
+        bt5.addEventListener('click', ()=>{
+            display +='5'
+            input.value= display
+        })
+
+        bt6.addEventListener('click', ()=>{
+            display +='6'
+            input.value= display
+        })
+
+        bt7.addEventListener('click', ()=>{
+            display +='7'
+            input.value= display
+        })
+
+        bt8.addEventListener('click', ()=>{
+            display +='8'
+            input.value= display
+        })
+
+        bt9.addEventListener('click', ()=>{
+            display +='9'
+            input.value= display
+        })
+
+        btzero.addEventListener('click', ()=>{
+            display +='0'
+            input.value= display
+        })
+    </script>
+</body>
+</html>
