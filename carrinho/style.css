@@ -1,0 +1,44 @@
+body{
+    background-color: #8ebdb6;
+    font-family: 'Playwrite GB S';
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+h1{
+    color: #063940;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input{
+    height: 20px;
+    width: 200px;
+    font-family: 'Playwrite GB S';
+    outline: none;
+}
+
+button{
+    margin-top: 19px;
+    width: 90px;
+    height: 30px;
+    font-family: 'Playwrite GB S';
+    background-color: #063940;
+    outline: none;
+    border-radius: 10%;
+}
+
+p{
+    margin-bottom: 2px;
+}
+
+a{
+    text-decoration: none;
+    color: #ece1c3;
+}
