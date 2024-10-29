@@ -1,0 +1,62 @@
+body{
+    background-color: #8ebdb6;
+    font-family: 'Playwrite GB S';
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+h1{
+    color: #063940;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input{
+    height: 25px;
+    width: 260px;
+    font-family: 'Playwrite GB S';
+    outline: none;
+    opacity: 50%;
+    color: black;
+    transition: all linear 160ms;
+}
+
+button{
+    margin-top: 19px;
+    width: 100px;
+    height: 40px;
+    font-family: 'Playwrite GB S';
+    background-color: #063940;
+    color: #fff;
+    outline: none;
+    transition: all linear 160ms;
+}
+
+p{
+    margin-bottom: 2px;
+}
+
+a{
+    text-decoration: none;
+    color: #ece1c3;
+}
+
+.mail input:focus{
+    border: 1px solid #063940;
+}
+
+.pass input:focus{
+    border:  1px solid #063940;
+}
+
+.main button:hover{
+    transform: scale(1.05);
+    background-color: #0c707e;
+}
