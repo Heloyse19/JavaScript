@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Consulta de média</h1>
+        <input type="number" id="n1" placeholder="primeira nota">
+        <input type="number" id="n2" placeholder="segunda nota">
+        <input type="number" id="n3" placeholder="terceira not">
+        <input type="number" id="n4" placeholder="quarta nota">
+        <p id="display"></p>
+        <button id="consulta">média</button>
+    </div>
+    <script>
+        const n1= document.getElementById('n1');
+        const n2= document.getElementById('n2');
+            const n3 = document.getElementById('n3');
+        const n4= document.getElementById('n4');
+        const display= document.getElementById('display');
+        display= ''
+
+        consulta.addEventListener('click', ()=>{
+            console.log(n1.value);
+            let soma= parseInt((n1.value + n2.value + n3.value + n4.value)/4);
+            display.innerHTML+= soma;
+        })
+    </script>
+</body>
+</html>
